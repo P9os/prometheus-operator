@@ -327,6 +327,7 @@ type telegramConfig struct {
 	DisableNotifications bool              `yaml:"disable_notifications,omitempty" json:"disable_notifications,omitempty"`
 	ParseMode            string            `yaml:"parse_mode,omitempty" json:"parse_mode,omitempty"`
 	HTTPConfig           *httpClientConfig `yaml:"http_config,omitempty" json:"http_config,omitempty"`
+	ThreadID             int               `yaml:"thread_id,omitempty" json:"thread_id,omitempty"`
 }
 
 type sigV4Config struct {
