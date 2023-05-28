@@ -808,6 +808,9 @@ type TelegramConfig struct {
 	// HTTP client configuration.
 	// +optional
 	HTTPConfig *HTTPConfig `json:"httpConfig,omitempty"`
+	// ThreadID message_thread_id
+	// +optional
+	ThreadID int64 `json:"threadID"`
 }
 
 // InhibitRule defines an inhibition rule that allows to mute alerts when other

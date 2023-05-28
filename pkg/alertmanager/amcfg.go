@@ -1004,6 +1004,7 @@ func (cb *configBuilder) convertTelegramConfig(ctx context.Context, in monitorin
 		Message:              in.Message,
 		DisableNotifications: false,
 		ParseMode:            in.ParseMode,
+		ThreadID:             in.ThreadID,
 	}
 
 	if in.HTTPConfig != nil {
