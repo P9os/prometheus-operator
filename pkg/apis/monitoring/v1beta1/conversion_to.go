@@ -421,6 +421,7 @@ func convertTelegramConfigTo(in TelegramConfig) v1alpha1.TelegramConfig {
 		DisableNotifications: in.DisableNotifications,
 		ParseMode:            in.ParseMode,
 		HTTPConfig:           convertHTTPConfigTo(in.HTTPConfig),
+		ThreadID:             in.ThreadID,
 	}
 }
 
